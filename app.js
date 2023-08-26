@@ -18,9 +18,6 @@ app.use(session({secret: 'keyboard cat',resave: false,saveUninitialized: false})
 app.use(passport.initialize());
 app.use(passport.session());
 
-
-
-// const url="mongodb+srv://hansadhwaja:Hansa%402002@cluster0.iewubng.mongodb.net/userDB?retryWrites=true&w=majority";
 const connectionParams={useNewUrlParser:true,useUnifiedTopology:true};
 
 mongoose.connect(process.env.URL,connectionParams).then(()=>{
